@@ -32,7 +32,7 @@ type XmlFile struct {
 	FilePath string
 	Content  string
 }
-
+                   
 // ParseXMLs is a parser for parse all query in several XML files to []ast.StmtInfo one by one;
 // you can set `skipErrorQuery` true to ignore invalid query.
 func ParseXMLs(data []XmlFile, skipErrorQuery bool) ([]ast.StmtInfo, error) {
